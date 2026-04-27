@@ -60,13 +60,7 @@
 - 強み：継続学習力 / 行動力 / 抽象を具体化する要件定義力
 
 📧 **Email**: [haruto.work31@gmail.com](mailto:haruto.work31@gmail.com)
-💻 **GitHub**: <!-- TODO: 本番URLに差し替え -->
-
----
-
-## 📝 ライセンス
-
-<!-- TODO: ライセンス方針を明記（例：作品の二次利用可否、コードの利用可否） -->
+💻 **GitHub**:[https://github.com/ht-work](https://github.com/ht-work)
 
 ---
 
