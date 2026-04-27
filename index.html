@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Web Design × Frontend</title>
+    <meta
+      name="description"
+      content="Webデザインとフロントエンド実装を軸にしたポートフォリオ。課題、施策、担当範囲、成果まで確認できます。"
+    />
+    <meta property="og:title" content="Portfolio | Web Design × Frontend" />
+    <meta
+      property="og:description"
+      content="実装×デザイナーとしての制作実績を整理したポートフォリオサイト。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/index.html" />
+    <script>
+      document.documentElement.classList.add("is-boot-loading");
+    </script>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="page-loader" aria-hidden="true">
+      <div class="loader">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+
+        <div class="covers">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="site-header-inner">
+          <a href="index.html" class="brand">Portfolio</a>
+          <nav class="main-nav" aria-label="主要ナビゲーション">
+            <a href="archive.html" data-nav="archive">Works</a>
+            <a href="about.html" data-nav="about">About</a>
+            <a href="contact.html" data-nav="contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" aria-label="First View">
+          <div class="hero-media" aria-hidden="true">
+            <div class="hero-depth">
+              <span class="hero-depth-orb hero-depth-orb-a"></span>
+              <span class="hero-depth-orb hero-depth-orb-b"></span>
+            </div>
+            <div class="hero-grid">
+              <div class="parallax-column" id="col1"></div>
+              <div class="parallax-column" id="col2"></div>
+              <div class="parallax-column" id="col3"></div>
+            </div>
+            <div class="hero-overlay"></div>
+          </div>
+          <div class="hero-content page">
+            <div class="hero-content-inner">
+              <h1 class="hero-title">Web Design × Frontend</h1>
+            </div>
+          </div>
+          <a
+            class="hero-scroll-btn"
+            href="#manifesto-section"
+            aria-label="Manifesto セクションへスクロール"
+          >
+            <span class="hero-scroll-btn-label">Scroll Down</span>
+            <span class="hero-scroll-btn-arrow" aria-hidden="true"></span>
+          </a>
+        </section>
+
+        <section
+          class="section manifesto-section"
+          id="manifesto-section"
+          aria-labelledby="manifesto-title"
+        >
+          <div class="page manifesto-shell">
+            <header class="manifesto-head">
+              <p class="section-label manifesto-eyebrow">Manifesto</p>
+              <h2 class="manifesto-title" id="manifesto-title">
+                <span>Design with Intent.</span>
+                <span>Build with Context.</span>
+              </h2>
+            </header>
+            <p class="manifesto-copy">
+              情報の階層・導線・実装品質にこだわった、<br />Webデザインとフロントエンド開発。
+            </p>
+          </div>
+        </section>
+
+        <section
+          class="section"
+          id="featured-section"
+          aria-labelledby="featured-title"
+        >
+          <div class="page">
+            <header class="section-head">
+              <p class="section-label">Selected</p>
+              <h2 class="section-title" id="featured-title">Featured Works</h2>
+            </header>
+            <div
+              id="featured-list"
+              class="cards-grid cards-grid-featured"
+            ></div>
+          </div>
+        </section>
+
+        <section
+          class="section index-nav-section"
+          aria-labelledby="navigate-title"
+        >
+          <div class="page">
+            <header class="section-head index-nav-head">
+              <p class="section-label">Navigate</p>
+              <h2 class="section-title tight" id="navigate-title">
+                View More.
+              </h2>
+            </header>
+            <div class="index-nav-links" aria-label="補助ナビゲーション">
+              <a class="index-nav-link" href="about.html">About</a>
+              <a class="index-nav-link" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-inner">
+          <p>Portfolio</p>
+          <p>© <span data-year></span></p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="scripts/works-data.js"></script>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/parallax.js"></script>
+  </body>
+</html>

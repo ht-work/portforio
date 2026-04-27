@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>実績詳細 | Portfolio</title>
+    <meta
+      name="description"
+      content="実績の概要、課題、施策、担当範囲、使用技術、成果をまとめた詳細ページ。"
+    />
+    <meta property="og:title" content="実績詳細 | Portfolio" />
+    <meta
+      property="og:description"
+      content="課題と施策、担当範囲まで確認できる実績詳細ページ。"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="/detail.html" />
+    <script>
+      document.documentElement.classList.add("is-boot-loading");
+    </script>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="archive">
+    <div class="page-loader" aria-hidden="true">
+      <div class="loading">Loading</div>
+    </div>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a href="index.html" class="brand">Portfolio</a>
+        <nav class="main-nav" aria-label="主要ナビゲーション">
+          <a href="archive.html" data-nav="archive">Works</a>
+          <a href="about.html" data-nav="about">About</a>
+          <a href="contact.html" data-nav="contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <div class="page">
+          <h1 class="page-title" id="detail-page-title">実績詳細</h1>
+        </div>
+      </section>
+      <section>
+        <div class="page" id="detail-container"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>Portfolio</p>
+        <p>© <span data-year></span></p>
+      </div>
+    </footer>
+
+    <script src="scripts/works-data.js"></script>
+    <script src="scripts/common.js"></script>
+  </body>
+</html>

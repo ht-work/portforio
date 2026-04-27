@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Works | Portfolio</title>
+    <meta
+      name="description"
+      content="LP、Banner、Websiteのカテゴリで実績を閲覧できるアーカイブ一覧ページ。"
+    />
+    <meta property="og:title" content="Works | Portfolio" />
+    <meta
+      property="og:description"
+      content="カテゴリ別に実績を確認できるアーカイブ一覧。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/archive.html" />
+    <script>
+      document.documentElement.classList.add("is-boot-loading");
+    </script>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="archive">
+    <div class="page-loader" aria-hidden="true">
+      <div class="loading">Loading</div>
+    </div>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a href="index.html" class="brand">Portfolio</a>
+        <nav class="main-nav" aria-label="主要ナビゲーション">
+          <a href="archive.html" data-nav="archive">Works</a>
+          <a href="about.html" data-nav="about">About</a>
+          <a href="contact.html" data-nav="contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <div class="page">
+          <h1 class="page-title">Works</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page">
+          <div class="filter-tabs" role="tablist" aria-label="カテゴリフィルタ">
+            <button class="tab-btn" type="button" data-category="All">
+              All
+            </button>
+            <button class="tab-btn" type="button" data-category="LP">LP</button>
+            <button class="tab-btn" type="button" data-category="Banner">
+              Banner
+            </button>
+            <button class="tab-btn" type="button" data-category="Website">
+              Website
+            </button>
+          </div>
+          <div id="archive-list" class="cards-grid cards-grid-archive"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>Portfolio</p>
+        <p>© <span data-year></span></p>
+      </div>
+    </footer>
+
+    <script src="scripts/works-data.js"></script>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/archive-filter.js"></script>
+  </body>
+</html>
